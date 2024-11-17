@@ -1,6 +1,7 @@
 {
   "name": "rut-resume",
   "version": "0.1.0",
+  "homepage": "https://rut96.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
