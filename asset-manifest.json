@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16dc1b1f.css",
+    "main.js": "/static/js/main.ea831e8e.js",
+    "static/js/453.18fd4992.chunk.js": "/static/js/453.18fd4992.chunk.js",
+    "static/media/portfolio.png": "/static/media/portfolio.a80b8bfae496ef4e6459.png",
+    "static/media/Contact.svg": "/static/media/Contact.b704c3c7af170948ed1877441da4f06c.svg",
+    "static/media/nodejs.png": "/static/media/nodejs.007e99f68b718e476aba.png",
+    "static/media/auth.png": "/static/media/auth.818d5c7ecb93585d3952.png",
+    "static/media/angular-icon.png": "/static/media/angular-icon.351a4d24ae902e7e17e8.png",
+    "static/media/typescript.png": "/static/media/typescript.8e08c2165d60d7ca62a9.png",
+    "static/media/docker.png": "/static/media/docker.a1ade01f67ea8745fce2.png",
+    "static/media/phone-icon.png": "/static/media/phone-icon.24766d1fd6e204334062.png",
+    "static/media/default-img.jpg": "/static/media/default-img.0665a9b7edd5958f0255.jpg",
+    "static/media/sql.png": "/static/media/sql.d0875781b3030e385cc1.png",
+    "static/media/api.png": "/static/media/api.3b1f22a2427ec70c0742.png",
+    "static/media/react-icon.png": "/static/media/react-icon.d3171bb9aecf97b9892b.png",
+    "static/media/email-icon.png": "/static/media/email-icon.3e7fa960b9f59668e55e.png",
+    "static/media/cisco-item.svg": "/static/media/cisco-item.867ac56349d9da94e976b51dab9db457.svg",
+    "static/media/git-icon.svg": "/static/media/git-icon.2231ab474a49d68c30848552a22213bc.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.05aeefea9c7f443189435e6fb19a3d06.svg",
+    "static/media/java-icon.svg": "/static/media/java-icon.38de31869a5a34c44a779c241f671a9a.svg",
+    "static/media/js-icon.svg": "/static/media/js-icon.90384b2de06d28553533ed9bb6d606bf.svg",
+    "static/media/mongo-icon.svg": "/static/media/mongo-icon.cfeb3add3380e9d0290e2960806d65ad.svg",
+    "static/media/firebase-icon.svg": "/static/media/firebase-icon.eeb7077534c1550d2f0140fd2a649dc7.svg",
+    "static/media/css-icon.svg": "/static/media/css-icon.74d7bcc15b667f1b98e7c0170080357e.svg",
+    "static/media/html-icon.svg": "/static/media/html-icon.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
+    "index.html": "/index.html",
+    "main.16dc1b1f.css.map": "/static/css/main.16dc1b1f.css.map",
+    "main.ea831e8e.js.map": "/static/js/main.ea831e8e.js.map",
+    "453.18fd4992.chunk.js.map": "/static/js/453.18fd4992.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16dc1b1f.css",
+    "static/js/main.ea831e8e.js"
+  ]
+}
