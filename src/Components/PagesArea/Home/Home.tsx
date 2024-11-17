@@ -1,7 +1,7 @@
 import "./Home.css";
 import IImg from "../../../Assets/Images/portfolio.png";
 import { useTitle } from "../../../Utils/UseTitle";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export function Home(): JSX.Element {
     useTitle("Van Rut Portfolio");
