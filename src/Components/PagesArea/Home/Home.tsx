@@ -1,15 +1,10 @@
 import "./Home.css";
 import IImg from "../../../Assets/Images/portfolio.png";
-// import { useTitle } from "../../../Utils/UseTitle";
-// import { useNavigate } from "react-router-dom";
+import { useTitle } from "../../../Utils/UseTitle";
 
 export function Home(): JSX.Element {
-    // useTitle("Van Rut Portfolio");
-    // const navigate = useNavigate();
-
-    // function toProjects() {
-    //     navigate("#projects")
-    // }
+    
+    useTitle("Van Rut Portfolio");
 
     return (
         <div className="Home">
@@ -18,7 +13,7 @@ export function Home(): JSX.Element {
                     <p>Software Engineer & Full Stack Developer</p>
                     <div className="cta-buttons">
                         <a href="#projects" className="cta-primary">View Projects</a>
-                        <button className="cta-secondary">Contact Me</button>
+                        <a href="#contact" className="cta-secondary">Contact Me</a>
                     </div>
                 </div>
 

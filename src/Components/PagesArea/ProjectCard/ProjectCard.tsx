@@ -4,7 +4,7 @@ import { Github, Globe } from 'lucide-react';
 type ProjectProps = {
     image: string;
     title: string;
-    description: string;
+    description: string[];
     technologies?: string[];
     githubLink?: string;
     siteLink?: string;
@@ -17,7 +17,11 @@ export function ProjectCard(props: ProjectProps): JSX.Element {
                 <div className="card-image-container">
                     <img src={props.image} alt={props.title} />
                     <div className="image-overlay">
-                        <p>{props.description}</p>
+                        <div className="description-container">
+                            {props.description.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="card-content">
