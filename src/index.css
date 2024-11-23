@@ -7,7 +7,7 @@
   --primary-color-light: white;
   --primary-accent-color: #ffc86a;
   --secondary-light: #3d3e42;
-  
+
   --border-radius-sm: 0.5rem;
   --border-radius-lg: 1rem;
   --transition-base: all 0.3s ease;
@@ -18,13 +18,17 @@
   --blur-effect: blur(8px);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   font-family: "Playfair Display", sans-serif;
   scroll-behavior: smooth;
 }
@@ -32,15 +36,15 @@ html, body, #root {
 
 @media (max-width: 768px) {
   :root {
-      --spacing-lg: 1.5rem;
-      --header-height: var(--header-height-tablet);
+    --spacing-lg: 1.5rem;
+    --header-height: var(--header-height-tablet);
   }
 }
 
 @media (max-width: 480px) {
   :root {
-      --spacing-base: 0.8rem;
-      --spacing-lg: 1.2rem;
-      --header-height: var(--header-height-mobile);
+    --spacing-base: 0.8rem;
+    --spacing-lg: 1.2rem;
+    --header-height: var(--header-height-mobile);
   }
 }

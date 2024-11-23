@@ -19,12 +19,27 @@
     transform: translateY(-8px);
 }
 
-.SkillCard:hover .icon-background {
-    transform: scale(1.2);
-    opacity: 0.2;
+.SkillCard::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: var(--primary-accent-color);
+    opacity: 0;
+    filter: blur(30px);
+    transition: all 0.3s ease;
+    z-index: 1;
 }
 
-.skill-icon {
+.SkillCard:hover::after {
+    opacity: 0.1;
+}
+
+
+.SkillCard .skill-icon {
     position: relative;
     width: 80px;
     height: 80px;
@@ -34,7 +49,12 @@
     justify-content: center;
 }
 
-.icon-background {
+.SkillCard:hover .icon-background {
+    transform: scale(1.2);
+    opacity: 0.2;
+}
+
+.SkillCard .icon-background {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -47,7 +67,7 @@
     transition: all 0.3s ease;
 }
 
-.skill-icon img {
+.SkillCard .skill-icon img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -57,7 +77,11 @@
     transition: all 0.3s ease;
 }
 
-.skill-dot {
+.SkillCard:hover .skill-icon img {
+    transform: scale(1.1);
+}
+
+.SkillCard .skill-dot {
     position: relative;
     width: 100%;
     height: 100%;
@@ -67,7 +91,7 @@
     z-index: 1;
 }
 
-.dot-core {
+.SkillCard .dot-core {
     width: 20px;
     height: 20px;
     background: var(--primary-accent-color);
@@ -77,7 +101,7 @@
     box-shadow: 0 0 10px var(--primary-accent-color);
 }
 
-.dot-pulse {
+.SkillCard .dot-pulse {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,25 +111,6 @@
     background: var(--primary-accent-color);
     border-radius: 50%;
     animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.8;
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(2);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.8;
-    }
-}
-
-.SkillCard:hover .skill-icon img {
-    transform: scale(1.1);
 }
 
 .SkillCard:hover .dot-core {
@@ -122,6 +127,14 @@
     width: 100%;
     padding: 0 0.5rem;
     overflow-wrap: break-word;
+    cursor: default;
+    z-index: 3;
+}
+
+.SkillCard:hover h3  {
+    color: black;
+    transform: translateY(-5px);
+    font-weight: 600;
 }
 
 .SkillCard .card-border {
@@ -145,6 +158,8 @@
     opacity: 1;
 }
 
+/* ------------------------------ Animation ------------------------------*/
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -156,24 +171,22 @@
     }
 }
 
-/* Glowing effect on hover */
-.SkillCard::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background: var(--primary-accent-color);
-    opacity: 0;
-    filter: blur(30px);
-    transition: all 0.3s ease;
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
 }
 
-.SkillCard:hover::after {
-    opacity: 0.1;
-}
+/* ------------------------------ Responsiveness ------------------------------*/
 
 @media (max-width: 768px) {
     .SkillCard {
