@@ -1,7 +1,7 @@
+import cryptoTrackerImg from '../../../Assets/Images/cryptoTrackerImg.png';
+import weatherAppImg from '../../../Assets/Images/project1.png';
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./Projects.css";
-import defaultImg from '../../../Assets/Images/default-img.jpg';
-import weatherAppImg from '../../../Assets/Images/project1.png';
 
 export function Projects(): JSX.Element {
     return (
@@ -23,13 +23,27 @@ export function Projects(): JSX.Element {
                         "Implemented real-time data fetching, error handling, and 7-day forecasting.",
                         "Built with React, TypeScript and Weather API integration."
                     ]}
-                    // description ="Full-stack React application showcasing advanced weather visualization.
-                    // Created responsive UI with dynamic weather animations and glass-morphic design. Implemented real-time data 
-                    // fetching, error handling, and 7-day forecasting. Built with React, TypeScript and Weather 
-                    // API integration. Feel free to check out the live demo or code on my GitHub."
                     technologies={["React", "TypeScript", "CSS", "Weather API Integration"]} />
-                <ProjectCard image={defaultImg} title="Project 2" description={["Project description"]} />
-                <ProjectCard image={defaultImg} title="Project 3" description={["Project description"]} />
+                <ProjectCard
+                    image={cryptoTrackerImg}
+                    siteLink="https://rut96.github.io/Root-the-coin/"
+                    githubLink="https://github.com/Rut96/Root-the-coin"
+                    title="Crypto Tracker Pro"
+                    description={[
+                        "Interactive cryptocurrency tracking application with real-time price monitoring and advanced charting capabilities.",
+                        "Implemented responsive coin cards with flip animations and dynamic price updates using CoinGecko API.",
+                        "Built advanced candlestick charts with customizable timeframes using ApexCharts and CryptoCompare API.",
+                        "Created seamless UX with session-based caching, parallel API fetching, and smooth parallax scrolling effects."
+                    ]}
+                    technologies={[
+                        "JavaScript",
+                        "jQuery",
+                        "ApexCharts",
+                        "CSS3",
+                        "CoinGecko API",
+                        "CryptoCompare API"
+                    ]}
+                />
             </div>
         </div>
     );
