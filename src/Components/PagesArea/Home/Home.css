@@ -68,6 +68,7 @@
     background-color: transparent;
     color: var(--primary-accent-color);
     border: 2px solid var(--primary-accent-color);
+    text-decoration: none;
 }
 
 .cta-secondary:hover {
