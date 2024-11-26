@@ -1,5 +1,6 @@
 import cryptoTrackerImg from '../../../Assets/Images/cryptoTrackerImg.png';
 import weatherAppImg from '../../../Assets/Images/project1.png';
+import hireHeroImg from '../../../Assets/Images/hirehero.png';
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./Projects.css";
 
@@ -44,6 +45,25 @@ export function Projects(): JSX.Element {
                         "CryptoCompare API"
                     ]}
                 />
+                <ProjectCard
+                    image={hireHeroImg}
+                    siteLink="https://rut-hire-hero.web.app/home"
+                    // githubLink="[Your GitHub repo URL]"
+                    title="HireHero - Interview Preparation Assistant"
+                    description={[
+                        "Full-stack Angular application providing personalized technical interview preparation.",
+                        "Implemented intelligent Q&A generation using GPT-4 API for custom interview scenarios.",
+                        "Created dynamic UI with smooth animations, expandable cards, and responsive design.",
+                        "Developed intuitive form controls for customizing interview difficulty and topics.",
+                        "Integrated real-time interview tips carousel with automated content generation."
+                    ]}
+                    technologies={[
+                        "Angular",
+                        "TypeScript",
+                        "GPT-4 API Integration",
+                        "CSS Animations",
+                        "Responsive Design"
+                    ]} />
             </div>
         </div>
     );
