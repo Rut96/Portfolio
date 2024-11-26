@@ -1,7 +1,9 @@
 import cryptoTrackerImg from '../../../Assets/Images/cryptoTrackerImg.png';
 import weatherAppImg from '../../../Assets/Images/project1.png';
 import hireHeroImg from '../../../Assets/Images/hirehero.png';
+import aiGeneratorImg from '../../../Assets/Images/aiGeneratorImg.png';
 import { ProjectCard } from "../ProjectCard/ProjectCard";
+
 import "./Projects.css";
 
 export function Projects(): JSX.Element {
@@ -63,7 +65,29 @@ export function Projects(): JSX.Element {
                         "GPT-4 API Integration",
                         "CSS Animations",
                         "Responsive Design"
-                    ]} />
+                    ]}
+                />
+                <ProjectCard
+                    image={aiGeneratorImg}
+                    siteLink="https://rut-ai-image-generator.web.app/"
+                    // githubLink="your-github-repo"
+                    title="AI Image Generator"
+                    description={[
+                        "Modern React application integrating DALL-E API for AI image generation with style controls.",
+                        "Developed modular component architecture with TypeScript for type safety and maintainability.",
+                        "Implemented state management using React Hooks and local storage for persistent image history.",
+                        "Created responsive UI with CSS Grid, Flexbox, and custom animations for enhanced user experience.",
+                        "Built prompt engineering service for optimized image generation results."
+                    ]}
+                    technologies={[
+                        "React + TypeScript",
+                        "React Hook Form",
+                        "DALL-E API",
+                        "CSS3 Animations",
+                        "Local Storage",
+                        "Responsive Design"
+                    ]}
+                />
             </div>
         </div>
     );
