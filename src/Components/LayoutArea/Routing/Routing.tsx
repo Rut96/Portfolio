@@ -19,15 +19,15 @@ export function Routing(): JSX.Element {
                             </div>
                         </section>
 
-                        <section id="skills" className="section">
-                            <div className="section-container">
-                                <Skills />
-                            </div>
-                        </section>
-
                         <section id="projects" className="section">
                             <div className="section-container">
                                 <Projects />
+                            </div>
+                        </section>
+
+                        <section id="skills" className="section">
+                            <div className="section-container">
+                                <Skills />
                             </div>
                         </section>
 
