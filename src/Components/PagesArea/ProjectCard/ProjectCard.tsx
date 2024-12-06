@@ -1,53 +1,68 @@
-import "./ProjectCard.css";
+import { useNavigate } from 'react-router-dom';
 import { Github, Globe } from 'lucide-react';
+import './ProjectCard.css';
 
-type ProjectProps = {
+type ProjectCardProps = {
+    id: string;
     image: string;
     title: string;
-    description: string[];
-    technologies?: string[];
+    technologies: string[];
     githubLink?: string;
     siteLink?: string;
 }
 
-export function ProjectCard(props: ProjectProps): JSX.Element {
+export function ProjectCard({ id, image, title, technologies, githubLink, siteLink }: ProjectCardProps): JSX.Element {
+    const navigate = useNavigate();
+
+    const handleClick = (e: React.MouseEvent) => {
+        // Only navigate if we didn't click on a link
+        if (!(e.target as HTMLElement).closest('a')) {
+            e.preventDefault();
+            navigate(`/project/${id}`);
+        }
+    };
+
     return (
-        <div className="ProjectCard">
-            <div className="card-front">
-                <div className="card-image-container">
-                    <img src={props.image} alt={props.title} />
-                    <div className="image-overlay">
-                        <div className="description-container">
-                            {props.description.map((paragraph, index) => (
-                                <p key={index}>{paragraph}</p>
-                            ))}
-                        </div>
-                    </div>
+        <div className="ProjectCard" onClick={handleClick}>
+            <div className="card-image-container">
+                <img src={image} alt={title} />
+                <div className="image-overlay">
+                    <span>View Project</span>
                 </div>
-                <div className="card-content">
-                    <h3>{props.title}</h3>
-                    {props.technologies && (
-                        <div className="tags">
-                            {props.technologies.map((tech, index) => (
-                                <span key={index} className="tag">{tech}</span>
-                            ))}
-                        </div>
-                    )}
+            </div>
+            <div className="card-content">
+                <h3>{title}</h3>
+                <div className="technologies">
+                    {technologies.map((tech, index) => (
+                        <span key={index} className="tech-tag">{tech}</span>
+                    ))}
+                </div>
+                {(githubLink || siteLink) && (
                     <div className="card-links">
-                        {props.githubLink && (
-                            <a href={props.githubLink} target="_blank" rel="noopener noreferrer" className="link github-link">
+                        {githubLink && (
+                            <a 
+                                href={githubLink} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="link github-link"
+                            >
                                 <Github size={16} />
                                 <span>Code</span>
                             </a>
                         )}
-                        {props.siteLink && (
-                            <a href={props.siteLink} target="_blank" rel="noopener noreferrer" className="link site-link">
+                        {siteLink && (
+                            <a 
+                                href={siteLink} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="link site-link"
+                            >
                                 <Globe size={16} />
                                 <span>Live Demo</span>
                             </a>
                         )}
                     </div>
-                </div>
+                )}
             </div>
         </div>
     );

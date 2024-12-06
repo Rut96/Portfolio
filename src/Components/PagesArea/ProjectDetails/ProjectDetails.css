@@ -1,0 +1,491 @@
+.ProjectDetails {
+    background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
+    color: var(--primary-color-light);
+    padding: 2rem;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.ProjectDetails.loading {
+    opacity: 0;
+}
+
+.ProjectDetails .details-container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.ProjectDetails .project-nav {
+    margin-bottom: 2rem;
+}
+
+.ProjectDetails .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 200, 106, 0.1);
+    border: 1px solid var(--primary-accent-color);
+    color: var(--primary-accent-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.ProjectDetails .back-button:hover {
+    background-color: var(--primary-accent-color);
+    color: #1a1a1a;
+    transform: translateX(-5px);
+}
+
+.ProjectDetails .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ProjectDetails .project-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-accent-color);
+    margin: 0;
+    background: linear-gradient(to right, var(--primary-accent-color), #ffd700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ProjectDetails .project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.ProjectDetails .project-links .link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-accent-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-accent-color);
+    transition: all 0.3s ease;
+    background: rgba(255, 200, 106, 0.1);
+}
+
+.ProjectDetails .project-links .link:hover {
+    background-color: var(--primary-accent-color);
+    color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+.ProjectDetails .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    min-height: 500px;
+    padding: 3rem 0;
+}
+
+.ProjectDetails .image-gallery,
+.ProjectDetails .description {
+    height: 500px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 200, 106, 0.1);
+    overflow: auto;
+}
+
+.ProjectDetails .image-gallery {
+    padding: 1rem;
+}
+
+.ProjectDetails .gallery-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ProjectDetails .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.ProjectDetails .gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 200, 106, 0.3);
+    color: var(--primary-accent-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.ProjectDetails .gallery-container:hover .gallery-nav {
+    opacity: 1;
+}
+
+.ProjectDetails .gallery-nav:hover {
+    background: rgba(255, 200, 106, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.ProjectDetails .gallery-nav.prev {
+    left: 20px;
+}
+
+.ProjectDetails .gallery-nav.next {
+    right: 20px;
+}
+
+.ProjectDetails .gallery-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.ProjectDetails .indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ProjectDetails .indicator.active {
+    background: var(--primary-accent-color);
+    transform: scale(1.2);
+}
+
+.ProjectDetails .description {
+    padding: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.03) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+}
+
+.ProjectDetails .description::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ProjectDetails .description::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+
+.ProjectDetails .description::-webkit-scrollbar-thumb {
+    background: rgba(255, 200, 106, 0.2);
+    border-radius: 4px;
+}
+
+.ProjectDetails .description::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 200, 106, 0.3);
+}
+
+.ProjectDetails .description p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    padding-left: 1.2rem;
+    border-left: 2px solid rgba(255, 200, 106, 0.3);
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.ProjectDetails .description p:hover {
+    border-left-color: var(--primary-accent-color);
+    color: var(--primary-color-light);
+    transform: translateX(5px);
+}
+
+.ProjectDetails .description p:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -0.75rem;
+    left: 1.2rem;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 200, 106, 0.2),
+        transparent
+    );
+}
+
+.ProjectDetails .description p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-accent-color);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    transform-origin: top;
+}
+
+.ProjectDetails .description p:hover::before {
+    transform: scaleY(1);
+}
+
+.ProjectDetails .technologies {
+    padding: 2rem;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.03) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    border-radius: 16px;
+    border: 1px solid rgba(255, 200, 106, 0.1);
+    margin-top: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.ProjectDetails .technologies h2 {
+    color: var(--primary-accent-color);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.ProjectDetails .technologies h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-accent-color) 0%,
+        rgba(255, 200, 106, 0.3) 50%,
+        transparent 100%
+    );
+}
+
+.ProjectDetails .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.ProjectDetails .tech-tag {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 25px;
+    color: var(--primary-accent-color);
+    border: 1px solid rgba(255, 200, 106, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.ProjectDetails .tech-tag::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 200, 106, 0.1),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ProjectDetails .tech-tag:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-accent-color);
+    box-shadow: 0 4px 12px rgba(255, 200, 106, 0.15);
+}
+
+.ProjectDetails .tech-tag:hover::before {
+    transform: translateX(100%);
+}
+
+@media (max-width: 768px) {
+    .ProjectDetails .technologies {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .ProjectDetails .tech-tags {
+        gap: 0.75rem;
+    }
+
+    .ProjectDetails .tech-tag {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ProjectDetails .technologies {
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+    }
+
+    .ProjectDetails .tech-tags {
+        gap: 0.5rem;
+    }
+
+    .ProjectDetails .tech-tag {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.9rem;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+    .ProjectDetails .details-container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ProjectDetails .main-content {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ProjectDetails .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ProjectDetails .main-content {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    
+    .ProjectDetails .image-gallery,
+    .ProjectDetails .description {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .ProjectDetails .description {
+        padding: 1.25rem;
+        gap: 1.25rem;
+    }
+
+    .ProjectDetails .description p {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ProjectDetails {
+        padding: 1rem;
+    }
+    
+    .ProjectDetails .project-header h1 {
+        font-size: 2rem;
+    }
+    
+    .ProjectDetails .description p {
+        font-size: 1rem;
+    }
+    
+    .ProjectDetails .gallery-nav {
+        width: 35px;
+        height: 35px;
+    }
+
+    .ProjectDetails .technologies {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .ProjectDetails .tech-tags {
+        gap: 8px;
+    }
+
+    .ProjectDetails .tech-tag {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .ProjectDetails .project-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ProjectDetails .project-links .link {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .ProjectDetails .image-gallery,
+    .ProjectDetails .description {
+        min-height: 300px;
+    }
+
+    .ProjectDetails .description {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .ProjectDetails .description p {
+        line-height: 1.6;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ProjectDetails .details-container > * {
+    animation: slideIn 0.5s ease forwards;
+}
