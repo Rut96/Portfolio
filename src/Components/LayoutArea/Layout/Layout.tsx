@@ -6,6 +6,7 @@ import { Projects } from "../../PagesArea/Projects/Projects";
 import { Education } from "../../PagesArea/Education/Education";
 import { Contact } from "../../PagesArea/Contact/Contact";
 import "./Layout.css";
+import { Routing } from '../Routing/Routing';
 
 export function Layout(): JSX.Element {
     const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,7 @@ export function Layout(): JSX.Element {
             </header>
 
             <main className="main-content">
-                <section id="home" className="section">
+                {/* <section id="home" className="section">
                     <div className="section-container">
                         <Home />
                     </div>
@@ -54,7 +55,9 @@ export function Layout(): JSX.Element {
                     <div className="section-container">
                         <Contact />
                     </div>
-                </section>
+                </section> */}
+
+                <Routing />
             </main>
         </div>
     );

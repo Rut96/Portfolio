@@ -29,31 +29,6 @@
     overflow-x: hidden;
 }
 
-.section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.section-container {
-    width: 100%;
-    max-width: var(--max-width-container);
-    margin: 0 auto;
-    height: 100%;
-}
-
-#home {
-    padding-top: 0;
-    min-height: calc(100vh - 80px);
-}
-
-#home .section-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
 
 @media (max-width: 1024px) {
     .section {
