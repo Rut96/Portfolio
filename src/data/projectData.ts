@@ -72,6 +72,8 @@ export const projectsData: Project[] = [
         ],
         technologies: ["React + TypeScript", "DALL-E API", "Local Storage", "Responsive Design"],
         siteLink: "https://rut-ai-image-generator.web.app/",
+        githubLink: "https://github.com/Rut96/root-image"
+
     },
     {
         id: "color-root",
