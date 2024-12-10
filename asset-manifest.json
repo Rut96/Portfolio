@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.165673be.css",
-    "main.js": "/Portfolio/static/js/main.ac9158c6.js",
+    "main.js": "/Portfolio/static/js/main.d8c820fd.js",
     "static/js/453.18fd4992.chunk.js": "/Portfolio/static/js/453.18fd4992.chunk.js",
     "static/media/project1.png": "/Portfolio/static/media/project1.d748ae06eaa567453b5b.png",
     "static/media/cryptoTrackerImg.png": "/Portfolio/static/media/cryptoTrackerImg.690e1dc6063e88079aae.png",
     "static/media/aiGeneratorImg.png": "/Portfolio/static/media/aiGeneratorImg.defc49a2781609cd5914.png",
     "static/media/portfolio.png": "/Portfolio/static/media/portfolio.a80b8bfae496ef4e6459.png",
     "static/media/hirehero.png": "/Portfolio/static/media/hirehero.45182373b69c9ec197b1.png",
+    "static/media/simonGameImg.png": "/Portfolio/static/media/simonGameImg.9fe41f8de19d879e7887.png",
+    "static/media/simonGameImg2.png": "/Portfolio/static/media/simonGameImg2.a7eb05b5a2d84bf32612.png",
     "static/media/rootColorIcon2.png": "/Portfolio/static/media/rootColorIcon2.be30b84b8da16780d121.png",
     "static/media/Contact.svg": "/Portfolio/static/media/Contact.b704c3c7af170948ed1877441da4f06c.svg",
     "static/media/rootColorIcon1.png": "/Portfolio/static/media/rootColorIcon1.59451b5ac55528208124.png",
@@ -31,11 +33,11 @@
     "static/media/html-icon.svg": "/Portfolio/static/media/html-icon.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "index.html": "/Portfolio/index.html",
     "main.165673be.css.map": "/Portfolio/static/css/main.165673be.css.map",
-    "main.ac9158c6.js.map": "/Portfolio/static/js/main.ac9158c6.js.map",
+    "main.d8c820fd.js.map": "/Portfolio/static/js/main.d8c820fd.js.map",
     "453.18fd4992.chunk.js.map": "/Portfolio/static/js/453.18fd4992.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.165673be.css",
-    "static/js/main.ac9158c6.js"
+    "static/js/main.d8c820fd.js"
   ]
 }
