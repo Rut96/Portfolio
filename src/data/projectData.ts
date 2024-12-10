@@ -4,6 +4,8 @@ import hireHeroImg from '../Assets/Images/hirehero.png';
 import aiGeneratorImg from '../Assets/Images/aiGeneratorImg.png';
 import rootColorIcon1 from '../Assets/Images/rootColorIcon1.png';
 import rootColorIcon2 from '../Assets/Images/rootColorIcon2.png';
+import simonGameImg from '../Assets/Images/simonGameImg.png';
+import simonGameImg2 from '../Assets/Images/simonGameImg2.png';
 
 export type Project = {
     id: string;
@@ -89,5 +91,26 @@ export const projectsData: Project[] = [
         ],
         technologies: ["React + TypeScript", "Plasmo Framework", "Chrome Extension API", "Chrome Storage"],
         githubLink: "https://github.com/Rut96/Color-Extension"
+    },
+    {
+        id: "simon-says",
+        title: "Simon Says Game",
+        images: [simonGameImg,simonGameImg2],
+        description: [
+            "Interactive React game application implementing the classic Simon Says with modern design and progressive difficulty.",
+            "Developed state management system using React Hooks for handling game sequences, scoring, and difficulty progression.",
+            "Created immersive UI with glass-morphic effects, dynamic animations, and real-time visual feedback.",
+            "Implemented modular service architecture with TypeScript for game logic, sound management, and error handling.",
+            "Built responsive layout with custom CSS animations and SweetAlert2 integration for enhanced user experience."
+        ],
+        technologies: [
+            "React + TypeScript",
+            "Custom CSS Animations",
+            "SweetAlert2",
+            "Local Storage",
+            "Sound Integration"
+        ],
+        siteLink: "https://root-says.web.app/",
+        githubLink: "https://github.com/Rut96/simon-says/settings/pages"
     }
 ];
