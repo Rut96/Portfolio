@@ -1,14 +1,31 @@
 import "./Menu.css";
 import { useState } from "react";
 import { Menu as MenuIcon, X } from "lucide-react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export function Menu(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
-
+    const location = useLocation();
+    const isMainPage = location.pathname === '/Portfolio' || location.pathname === '/Portfolio/';
+    
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleNavigation = (sectionId: string, event: React.MouseEvent) => {
+        event.preventDefault(); 
+        
+        if (isMainPage) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            window.location.href = '/Portfolio#' + sectionId;
+        }
+        setIsOpen(false);
+    };
+    
     return (
         <div className="Menu">
             <div className="logo">
@@ -41,11 +58,11 @@ export function Menu(): JSX.Element {
             </button>
 
             <nav className={`menu-nav ${isOpen ? 'open' : ''}`}>
-                <a href="#home" className="nav-link" onClick={toggleMenu}>Home</a>
-                <a href="#skills" className="nav-link" onClick={toggleMenu}>Skills</a>
-                <a href="#projects" className="nav-link" onClick={toggleMenu}>Projects</a>
-                <a href="#education" className="nav-link" onClick={toggleMenu}>Education</a>
-                <a href="#contact" className="nav-link" onClick={toggleMenu}>Contact</a>
+                <a href="#home" className="nav-link" onClick={(e) => handleNavigation('home', e)}>Home</a>
+                <a href="#projects" className="nav-link" onClick={(e) => handleNavigation('projects', e)}>Projects</a>
+                <a href="#skills" className="nav-link" onClick={(e) => handleNavigation('skills', e)}>Skills</a>
+                <a href="#education" className="nav-link" onClick={(e) => handleNavigation('education', e)}>Education</a>
+                <a href="#contact" className="nav-link" onClick={(e) => handleNavigation('contact', e)}>Contact</a>
             </nav>
 
             {isOpen && <div className="overlay" onClick={toggleMenu} />}
