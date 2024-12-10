@@ -1,7 +1,7 @@
-import "./Menu.css";
-import { useState } from "react";
 import { Menu as MenuIcon, X } from "lucide-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import "./Menu.css";
 
 export function Menu(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
