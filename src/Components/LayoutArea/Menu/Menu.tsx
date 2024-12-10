@@ -12,17 +12,26 @@ export function Menu(): JSX.Element {
         setIsOpen(!isOpen);
     };
 
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            const offsetTop = element.offsetTop;
+            window.scrollTo({
+                top: offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     const handleNavigation = (sectionId: string, event: React.MouseEvent) => {
-        event.preventDefault(); 
+        event.preventDefault();
         
         if (isMainPage) {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
+            scrollToSection(sectionId);
         } else {
-            window.location.href = '/Portfolio#' + sectionId;
+            window.location.replace('/Portfolio#' + sectionId);
         }
+        
         setIsOpen(false);
     };
     
