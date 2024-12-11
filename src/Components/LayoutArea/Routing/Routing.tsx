@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "../../PagesArea/Home/Home";
 import { Skills } from "../../PagesArea/Skills/Skills";
 import { Projects } from "../../PagesArea/Projects/Projects";
@@ -8,10 +8,13 @@ import { ProjectDetails } from "../../PagesArea/ProjectDetails/ProjectDetails";
 import "./Routing.css";
 
 export function Routing(): JSX.Element {
+    
+    const basePath = process.env.PUBLIC_URL || '/Portfolio';
+
     return (
         <div className="Routing">
             <Routes>
-                <Route path="/" element={
+                <Route path={`${basePath}`} element={
                     <>
                         <section id="home" className="section">
                             <div className="section-container">
@@ -44,7 +47,8 @@ export function Routing(): JSX.Element {
                         </section>
                     </>
                 } />
-                <Route path="/project/:id" element={<ProjectDetails />} />
+                <Route path={`${basePath}/project/:id`} element={<ProjectDetails />} />
+                <Route path="/" element={<Navigate to={basePath} replace />} />
             </Routes>
         </div>
     );
