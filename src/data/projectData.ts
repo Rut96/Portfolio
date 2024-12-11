@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
             "Built advanced candlestick charts with customizable timeframes using ApexCharts and CryptoCompare API.",
             "Created seamless UX with session-based caching, parallel API fetching, and smooth parallax scrolling effects."
         ],
-        technologies: ["JavaScript", "jQuery", "ApexCharts", "CoinGecko API","CryptoCompare API"],
+        technologies: ["JavaScript", "jQuery", "ApexCharts", "CoinGecko API","CryptoCompare API","Parallax"],
         siteLink: "https://rut96.github.io/Root-the-coin/",
         githubLink: "https://github.com/Rut96/Root-the-coin"
     },
@@ -79,7 +79,7 @@ export const projectsData: Project[] = [
     },
     {
         id: "color-root",
-        title: "Root Color Picker",
+        title: "Extension Root Color Picker",
         images: [rootColorIcon1, rootColorIcon2],
         description: [
             "Chrome extension built with Plasmo framework for efficient color sampling from any webpage.",
