@@ -1,18 +1,22 @@
 import { Menu as MenuIcon, X } from "lucide-react";
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Menu.css";
 
 export function Menu(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
-    const isMainPage = location.pathname === '/Portfolio' || location.pathname === '/Portfolio/';
-    
-    const toggleMenu = () => {
+    const navigate = useNavigate();
+
+    const basePath = process.env.PUBLIC_URL || '/Portfolio';
+    const isMainPage = location.pathname === basePath || location.pathname === `${basePath}/`;
+
+
+    function toggleMenu() {
         setIsOpen(!isOpen);
     };
 
-    const scrollToSection = (sectionId: string) => {
+    function scrollToSection(sectionId: string) {
         const element = document.getElementById(sectionId);
         if (element) {
             const offsetTop = element.offsetTop;
@@ -23,25 +27,37 @@ export function Menu(): JSX.Element {
         }
     };
 
-    const handleNavigation = (sectionId: string, event: React.MouseEvent) => {
+    // Handle initial hash navigation
+    useEffect(() => {
+        if (location.hash) {
+            const sectionId = location.hash.slice(1);
+            setTimeout(() => {
+                scrollToSection(sectionId);
+            }, 100);
+        }
+    }, [location.hash]);
+
+
+    function handleNavigation(sectionId: string, event: React.MouseEvent) {
         event.preventDefault();
-        
+
         if (isMainPage) {
             scrollToSection(sectionId);
+            navigate(`${basePath}#${sectionId}`, { replace: true });
         } else {
-            window.location.replace('/Portfolio#' + sectionId);
+            navigate(`${basePath}#${sectionId}`);
         }
-        
+
         setIsOpen(false);
     };
-    
+
     return (
         <div className="Menu">
             <div className="logo">
-                <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 100 100" 
-                    width="50" 
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                    width="50"
                     height="50"
                 >
                     <path

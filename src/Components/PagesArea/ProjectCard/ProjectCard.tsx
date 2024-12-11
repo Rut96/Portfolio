@@ -13,12 +13,17 @@ type ProjectCardProps = {
 
 export function ProjectCard({ id, image, title, technologies, githubLink, siteLink }: ProjectCardProps): JSX.Element {
     const navigate = useNavigate();
+    const basePath = process.env.PUBLIC_URL || '/Portfolio';
 
     const handleClick = (e: React.MouseEvent) => {
-        // Only navigate if we didn't click on a link
-        if (!(e.target as HTMLElement).closest('a')) {
+        // Check if the click was on or inside a link
+        const clickedElement = e.target as HTMLElement;
+        const isLink = clickedElement.closest('a');
+        
+        if (!isLink) {
             e.preventDefault();
-            navigate(`/project/${id}`);
+            e.stopPropagation(); // Prevent event bubbling
+            navigate(`${basePath}/project/${id}`);
         }
     };
 
