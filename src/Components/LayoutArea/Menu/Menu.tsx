@@ -53,7 +53,7 @@ export function Menu(): JSX.Element {
 
     return (
         <div className="Menu">
-            <div className="logo">
+            <div className="logo" onClick={(e) => handleNavigation('home', e)}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 100 100"
