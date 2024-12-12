@@ -7,12 +7,7 @@ export function Menu(): JSX.Element {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
-
-    // const basePath = process.env.PUBLIC_URL || '/Portfolio';
-    // const isMainPage = location.pathname === basePath || location.pathname === `${basePath}/`;
-
     const isMainPage = location.pathname === "/" || location.pathname === "";
-
 
     function toggleMenu() {
         setIsOpen(!isOpen);
@@ -45,11 +40,9 @@ export function Menu(): JSX.Element {
 
         if (isMainPage) {
             scrollToSection(sectionId);
-            // navigate(`${basePath}#${sectionId}`, { replace: true });
             navigate(`/#${sectionId}`);
 
         } else {
-            // navigate(`${basePath}#${sectionId}`);
             navigate(`/#${sectionId}`);
         }
 

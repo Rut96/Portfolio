@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Home } from "../../PagesArea/Home/Home";
 import { Skills } from "../../PagesArea/Skills/Skills";
 import { Projects } from "../../PagesArea/Projects/Projects";
@@ -8,7 +8,6 @@ import { ProjectDetails } from "../../PagesArea/ProjectDetails/ProjectDetails";
 import "./Routing.css";
 
 export function Routing(): JSX.Element {
-    
     return (
         <div className="Routing">
             <Routes>
