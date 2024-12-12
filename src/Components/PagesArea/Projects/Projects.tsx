@@ -15,7 +15,7 @@ export function Projects(): JSX.Element {
                     <ProjectCard
                         key={project.id}
                         id={project.id}
-                        image={project.images[0]}
+                        media={project.media}
                         title={project.title}
                         technologies={project.technologies}
                         githubLink={project.githubLink}
