@@ -1,6 +1,8 @@
 import "./Home.css";
 import IImg from "../../../Assets/Images/portfolio.png";
 import { useTitle } from "../../../Utils/UseTitle";
+import RutCVPdf from "../../../Assets/pdf/Rut_CV.pdf";
+import { NavLink } from "react-router-dom";
 
 export function Home(): JSX.Element {
     
@@ -12,8 +14,17 @@ export function Home(): JSX.Element {
                     <h1>Hi, I'm Rut Van Tinkelman</h1>
                     <p>Software Engineer & Full Stack Developer</p>
                     <div className="cta-buttons">
-                        <a href="#projects" className="cta-primary">View Projects</a>
-                        <a href="#contact" className="cta-secondary">Contact Me</a>
+                        <NavLink to="#projects" className="cta-primary"> View Projects </NavLink>
+                        <a 
+                            href={RutCVPdf} 
+                            className="cta-secondary"
+                            download="RutVan_CV.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Download CV
+                        </a>
+                        <NavLink to="#contact" className="cta-secondary">Contact Me</NavLink>
                     </div>
                 </div>
 
