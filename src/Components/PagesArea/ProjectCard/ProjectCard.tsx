@@ -1,17 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import { Github, Globe } from 'lucide-react';
 import './ProjectCard.css';
+import { MediaItem } from '../../../data/projectData';
 
 type ProjectCardProps = {
     id: string;
-    image: string;
+    media: MediaItem[];
     title: string;
     technologies: string[];
     githubLink?: string;
     siteLink?: string;
 }
 
-export function ProjectCard({ id, image, title, technologies, githubLink, siteLink }: ProjectCardProps): JSX.Element {
+export function ProjectCard({ id, media, title, technologies, githubLink, siteLink }: ProjectCardProps): JSX.Element {
     const navigate = useNavigate();
 
     const handleClick = (e: React.MouseEvent) => {
@@ -27,10 +28,15 @@ export function ProjectCard({ id, image, title, technologies, githubLink, siteLi
         }
     };
 
+    const thumbnailMedia = media[0];
+    const thumbnailUrl = thumbnailMedia.type === 'video' ? 
+        thumbnailMedia.thumbnail || thumbnailMedia.url : 
+        thumbnailMedia.url;
+
     return (
         <div className="ProjectCard" onClick={handleClick}>
             <div className="card-image-container">
-                <img src={image} alt={title} />
+                <img src={thumbnailUrl} alt={title} />
                 <div className="image-overlay">
                     <span>View Project</span>
                 </div>

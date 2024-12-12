@@ -1,5 +1,3 @@
-
-
 import { Menu as MenuIcon, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";

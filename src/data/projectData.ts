@@ -16,21 +16,41 @@ import vacationImg7 from '../Assets/Images/v7.png';
 import vacationImg8 from '../Assets/Images/v8.png';
 import vacationImg9 from '../Assets/Images/v9.png';
 import vacationImg10 from '../Assets/Images/v10.png';
+import vacationVideo from '../Assets/video/vacationVideo.mp4';
 
 export type Project = {
     id: string;
     title: string;
-    images: string[];
+    media: MediaItem[];
     description: string[];
     technologies: string[];
     githubLink?: string;
     siteLink?: string;
 }
+
+export type MediaItem = {
+    type: 'image' | 'video';
+    url: string;
+    thumbnail?: string;
+}
+
 export const projectsData: Project[] = [
     {
         id: "vacation-management",
         title: "Vacation Management System",
-        images: [vacationImg1,vacationImg2,vacationImg3,vacationImg4,vacationImg5,vacationImg6,vacationImg7,vacationImg8,vacationImg9,vacationImg10], 
+        media: [
+            { type: 'image', url: vacationImg1 },
+            { type: 'image', url: vacationImg2 },
+            { type: 'image', url: vacationImg3 },
+            { type: 'image', url: vacationImg4 },
+            { type: 'image', url: vacationImg5 },
+            { type: 'image', url: vacationImg6 },
+            { type: 'image', url: vacationImg7 },
+            { type: 'image', url: vacationImg8 },
+            { type: 'image', url: vacationImg9 },
+            { type: 'image', url: vacationImg10 },
+            { type: 'video', url: vacationVideo, thumbnail: vacationImg1 },
+        ],
         description: [
             "Full-stack vacation management platform with role-based access and real-time interactions.",
             "Developed comprehensive admin dashboard for vacation package management with image upload capabilities.",
@@ -52,7 +72,7 @@ export const projectsData: Project[] = [
     {
         id: "weather-app",
         title: "Weather App",
-        images: [weatherIcon],
+        media: [ { type: 'image', url: weatherIcon }],
         description: [
             "Full-stack React application showcasing advanced weather visualization.",
             "Created responsive UI with dynamic weather animations and glass-morphic design.",
@@ -66,21 +86,21 @@ export const projectsData: Project[] = [
     {
         id: "crypto-tracker",
         title: "Crypto Tracker",
-        images: [cryptoTrackerImg],
+        media: [ { type: 'image', url: cryptoTrackerImg }],
         description: [
             "Interactive cryptocurrency tracking application with real-time price monitoring and advanced charting capabilities.",
             "Implemented responsive coin cards with flip animations and dynamic price updates using CoinGecko API.",
             "Built advanced candlestick charts with customizable timeframes using ApexCharts and CryptoCompare API.",
             "Created seamless UX with session-based caching, parallel API fetching, and smooth parallax scrolling effects."
         ],
-        technologies: ["JavaScript", "jQuery", "ApexCharts", "CoinGecko API","CryptoCompare API","Parallax"],
+        technologies: ["JavaScript", "jQuery", "ApexCharts", "CoinGecko API", "CryptoCompare API", "Parallax"],
         siteLink: "https://rut96.github.io/Root-the-coin/",
         githubLink: "https://github.com/Rut96/Root-the-coin"
     },
     {
         id: "hire-hero",
         title: "HireHero - Interview Preparation Assistant",
-        images: [hireHeroImg],
+        media: [ { type: 'image', url: hireHeroImg }],
         description: [
             "Full-stack Angular application providing personalized technical interview preparation.",
             "Implemented intelligent Q&A generation using GPT-4 API for custom interview scenarios.",
@@ -95,7 +115,7 @@ export const projectsData: Project[] = [
     {
         id: "image-generator",
         title: "AI Image Generator",
-        images: [aiGeneratorImg],
+        media: [ { type: 'image', url: aiGeneratorImg }],
         description: [
             "Modern React application integrating DALL-E API for AI image generation with style controls.",
             "Developed modular component architecture with TypeScript for type safety and maintainability.",
@@ -112,7 +132,10 @@ export const projectsData: Project[] = [
     {
         id: "color-root",
         title: "Extension Root Color Picker",
-        images: [rootColorIcon1, rootColorIcon2],
+        media: [ 
+            { type: 'image', url: rootColorIcon1 },
+            { type: 'image', url: rootColorIcon2 }
+        ],
         description: [
             "Chrome extension built with Plasmo framework for efficient color sampling from any webpage.",
             "Implemented modern React architecture with TypeScript for robust type safety and component reusability.",
@@ -127,7 +150,10 @@ export const projectsData: Project[] = [
     {
         id: "simon-says",
         title: "Simon Says Game",
-        images: [simonGameImg,simonGameImg2],
+        media: [
+            { type: 'image', url: simonGameImg },
+            { type: 'image', url: simonGameImg2 },
+        ],
         description: [
             "Interactive React game application implementing the classic Simon Says with modern design and progressive difficulty.",
             "Developed state management system using React Hooks for handling game sequences, scoring, and difficulty progression.",
