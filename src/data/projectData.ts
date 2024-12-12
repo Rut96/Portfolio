@@ -6,6 +6,16 @@ import rootColorIcon1 from '../Assets/Images/rootColorIcon1.png';
 import rootColorIcon2 from '../Assets/Images/rootColorIcon2.png';
 import simonGameImg from '../Assets/Images/simonGameImg.png';
 import simonGameImg2 from '../Assets/Images/simonGameImg2.png';
+import vacationImg1 from '../Assets/Images/v1.png';
+import vacationImg2 from '../Assets/Images/v2.png';
+import vacationImg3 from '../Assets/Images/v3.png';
+import vacationImg4 from '../Assets/Images/v4.png';
+import vacationImg5 from '../Assets/Images/v5.png';
+import vacationImg6 from '../Assets/Images/v6.png';
+import vacationImg7 from '../Assets/Images/v7.png';
+import vacationImg8 from '../Assets/Images/v8.png';
+import vacationImg9 from '../Assets/Images/v9.png';
+import vacationImg10 from '../Assets/Images/v10.png';
 
 export type Project = {
     id: string;
@@ -17,6 +27,28 @@ export type Project = {
     siteLink?: string;
 }
 export const projectsData: Project[] = [
+    {
+        id: "vacation-management",
+        title: "Vacation Management System",
+        images: [vacationImg1,vacationImg2,vacationImg3,vacationImg4,vacationImg5,vacationImg6,vacationImg7,vacationImg8,vacationImg9,vacationImg10], 
+        description: [
+            "Full-stack vacation management platform with role-based access and real-time interactions.",
+            "Developed comprehensive admin dashboard for vacation package management with image upload capabilities.",
+            "Implemented user features including likes system, dynamic filtering, and responsive pagination.",
+            "Built secure authentication system with JWT tokens and MySQL database integration.",
+        ],
+        technologies: [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "MySQL",
+            "Redux",
+            "JWT",
+            "Docker"
+        ],
+        // githubLink: "YOUR_GITHUB_LINK"
+    },
     {
         id: "weather-app",
         title: "Weather App",
@@ -112,5 +144,6 @@ export const projectsData: Project[] = [
         ],
         siteLink: "https://root-says.web.app/",
         githubLink: "https://github.com/Rut96/simon-says/settings/pages"
-    }
+    },
+
 ];
