@@ -40,8 +40,7 @@ export function Menu(): JSX.Element {
 
         if (isMainPage) {
             scrollToSection(sectionId);
-            navigate(`/#${sectionId}`);
-
+            navigate(`#${sectionId}`, { replace: true });
         } else {
             navigate(`/#${sectionId}`);
         }
