@@ -8,8 +8,10 @@ export function Menu(): JSX.Element {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const basePath = process.env.PUBLIC_URL || '/Portfolio';
-    const isMainPage = location.pathname === basePath || location.pathname === `${basePath}/`;
+    // const basePath = process.env.PUBLIC_URL || '/Portfolio';
+    // const isMainPage = location.pathname === basePath || location.pathname === `${basePath}/`;
+
+    const isMainPage = location.pathname === "/" || location.pathname === "";
 
 
     function toggleMenu() {
@@ -43,9 +45,12 @@ export function Menu(): JSX.Element {
 
         if (isMainPage) {
             scrollToSection(sectionId);
-            navigate(`${basePath}#${sectionId}`, { replace: true });
+            // navigate(`${basePath}#${sectionId}`, { replace: true });
+            navigate(`/#${sectionId}`);
+
         } else {
-            navigate(`${basePath}#${sectionId}`);
+            // navigate(`${basePath}#${sectionId}`);
+            navigate(`/#${sectionId}`);
         }
 
         setIsOpen(false);
