@@ -9,12 +9,10 @@ import "./Routing.css";
 
 export function Routing(): JSX.Element {
     
-    const basePath = process.env.PUBLIC_URL || '/Portfolio';
-
     return (
         <div className="Routing">
             <Routes>
-                <Route path={`${basePath}`} element={
+                <Route path="/" element={
                     <>
                         <section id="home" className="section">
                             <div className="section-container">
@@ -47,8 +45,7 @@ export function Routing(): JSX.Element {
                         </section>
                     </>
                 } />
-                <Route path={`${basePath}/project/:id`} element={<ProjectDetails />} />
-                <Route path="/" element={<Navigate to={basePath} replace />} />
+                <Route path="/project/:id" element={<ProjectDetails />} />
             </Routes>
         </div>
     );
