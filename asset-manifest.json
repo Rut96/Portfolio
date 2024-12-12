@@ -1,12 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.165673be.css",
-    "main.js": "/Portfolio/static/js/main.b2773939.js",
+    "main.js": "/Portfolio/static/js/main.cdbddc64.js",
     "static/js/453.18fd4992.chunk.js": "/Portfolio/static/js/453.18fd4992.chunk.js",
+    "static/media/v1.png": "/Portfolio/static/media/v1.be41bf157f2d33d633ea.png",
+    "static/media/v4.png": "/Portfolio/static/media/v4.68e33d30f578e50492bb.png",
+    "static/media/v3.png": "/Portfolio/static/media/v3.0879a0542212cc9e53d0.png",
+    "static/media/v5.png": "/Portfolio/static/media/v5.b71171c27755174cdf14.png",
     "static/media/project1.png": "/Portfolio/static/media/project1.d748ae06eaa567453b5b.png",
+    "static/media/v2.png": "/Portfolio/static/media/v2.5239e4de22388f8b7796.png",
+    "static/media/v8.png": "/Portfolio/static/media/v8.c2fa45b4b1a92e17477a.png",
+    "static/media/v6.png": "/Portfolio/static/media/v6.ce6ff3e15c8dafcfe5d5.png",
+    "static/media/v7.png": "/Portfolio/static/media/v7.8e1b7f50b3b90148abd7.png",
     "static/media/cryptoTrackerImg.png": "/Portfolio/static/media/cryptoTrackerImg.690e1dc6063e88079aae.png",
+    "static/media/v10.png": "/Portfolio/static/media/v10.bb85902c976729bec9cf.png",
     "static/media/aiGeneratorImg.png": "/Portfolio/static/media/aiGeneratorImg.defc49a2781609cd5914.png",
     "static/media/portfolio.png": "/Portfolio/static/media/portfolio.a80b8bfae496ef4e6459.png",
+    "static/media/v9.png": "/Portfolio/static/media/v9.bb704c89e4a3cdd56985.png",
     "static/media/hirehero.png": "/Portfolio/static/media/hirehero.45182373b69c9ec197b1.png",
     "static/media/simonGameImg.png": "/Portfolio/static/media/simonGameImg.9fe41f8de19d879e7887.png",
     "static/media/simonGameImg2.png": "/Portfolio/static/media/simonGameImg2.a7eb05b5a2d84bf32612.png",
@@ -33,11 +43,11 @@
     "static/media/html-icon.svg": "/Portfolio/static/media/html-icon.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "index.html": "/Portfolio/index.html",
     "main.165673be.css.map": "/Portfolio/static/css/main.165673be.css.map",
-    "main.b2773939.js.map": "/Portfolio/static/js/main.b2773939.js.map",
+    "main.cdbddc64.js.map": "/Portfolio/static/js/main.cdbddc64.js.map",
     "453.18fd4992.chunk.js.map": "/Portfolio/static/js/453.18fd4992.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.165673be.css",
-    "static/js/main.b2773939.js"
+    "static/js/main.cdbddc64.js"
   ]
 }
