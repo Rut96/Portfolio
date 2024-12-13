@@ -110,7 +110,6 @@ export const projectsData: Project[] = [
 
         ],
         technologies: ["Angular", "TypeScript", "GPT-4 API Integration", "Responsive Design"],
-        siteLink: "https://rut-hire-hero.web.app/home",
     },
     {
         id: "image-generator",
@@ -125,7 +124,6 @@ export const projectsData: Project[] = [
 
         ],
         technologies: ["React + TypeScript", "DALL-E API", "Local Storage", "Responsive Design"],
-        siteLink: "https://rut-ai-image-generator.web.app/",
         githubLink: "https://github.com/Rut96/root-image"
 
     },
