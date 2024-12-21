@@ -67,6 +67,7 @@ export const projectsData: Project[] = [
             "JWT",
             "Docker"
         ],
+        githubLink: "https://github.com/Rut96/Fullstack-Vacations"
     },
     {
         id: "weather-app",
