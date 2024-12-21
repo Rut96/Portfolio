@@ -1,12 +1,13 @@
-import weatherIcon from '../Assets/Images/project1.png';
 import cryptoTrackerImg from '../Assets/Images/cryptoTrackerImg.png';
 import hireHeroImg from '../Assets/Images/hirehero.png';
-import aiGeneratorImg from '../Assets/Images/aiGeneratorImg.png';
+import hireHeroVid from '../Assets/video/hireHeroVideo.mov';
+import weatherIcon from '../Assets/Images/project1.png';
 import rootColorIcon1 from '../Assets/Images/rootColorIcon1.png';
 import rootColorIcon2 from '../Assets/Images/rootColorIcon2.png';
 import simonGameImg from '../Assets/Images/simonGameImg.png';
 import simonGameImg2 from '../Assets/Images/simonGameImg2.png';
 import vacationImg1 from '../Assets/Images/v1.png';
+import vacationImg10 from '../Assets/Images/v10.png';
 import vacationImg2 from '../Assets/Images/v2.png';
 import vacationImg3 from '../Assets/Images/v3.png';
 import vacationImg4 from '../Assets/Images/v4.png';
@@ -15,7 +16,6 @@ import vacationImg6 from '../Assets/Images/v6.png';
 import vacationImg7 from '../Assets/Images/v7.png';
 import vacationImg8 from '../Assets/Images/v8.png';
 import vacationImg9 from '../Assets/Images/v9.png';
-import vacationImg10 from '../Assets/Images/v10.png';
 import vacationVideo from '../Assets/video/vacationVideo.mp4';
 
 export type Project = {
@@ -67,7 +67,6 @@ export const projectsData: Project[] = [
             "JWT",
             "Docker"
         ],
-        // githubLink: "YOUR_GITHUB_LINK"
     },
     {
         id: "weather-app",
@@ -100,7 +99,11 @@ export const projectsData: Project[] = [
     {
         id: "hire-hero",
         title: "HireHero - Interview Preparation Assistant",
-        media: [ { type: 'image', url: hireHeroImg }],
+        media: [ 
+            { type: 'image', url: hireHeroImg },
+            { type: 'video', url: hireHeroVid }
+
+        ],
         description: [
             "Full-stack Angular application providing personalized technical interview preparation.",
             "Implemented intelligent Q&A generation using GPT-4 API for custom interview scenarios.",
@@ -110,22 +113,6 @@ export const projectsData: Project[] = [
 
         ],
         technologies: ["Angular", "TypeScript", "GPT-4 API Integration", "Responsive Design"],
-    },
-    {
-        id: "image-generator",
-        title: "AI Image Generator",
-        media: [ { type: 'image', url: aiGeneratorImg }],
-        description: [
-            "Modern React application integrating DALL-E API for AI image generation with style controls.",
-            "Developed modular component architecture with TypeScript for type safety and maintainability.",
-            "Implemented state management using React Hooks and local storage for persistent image history.",
-            "Created responsive UI with CSS Grid, Flexbox, and custom animations for enhanced user experience.",
-            "Built prompt engineering service for optimized image generation results."
-
-        ],
-        technologies: ["React + TypeScript", "DALL-E API", "Local Storage", "Responsive Design"],
-        githubLink: "https://github.com/Rut96/root-image"
-
     },
     {
         id: "color-root",
