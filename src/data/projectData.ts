@@ -114,6 +114,7 @@ export const projectsData: Project[] = [
 
         ],
         technologies: ["Angular", "TypeScript", "GPT-4 API Integration", "Responsive Design"],
+        siteLink:"https://rut-hire-hero.web.app/home"
     },
     {
         id: "color-root",
