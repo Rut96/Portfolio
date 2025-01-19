@@ -17,6 +17,9 @@ import vacationImg7 from '../Assets/Images/v7.png';
 import vacationImg8 from '../Assets/Images/v8.png';
 import vacationImg9 from '../Assets/Images/v9.png';
 import vacationVideo from '../Assets/video/vacationVideo.mp4';
+import weatherVideo from "../Assets/video/weatherVideo.mov";
+import coinVideo from "../Assets/video/coinVideo.mov";
+import colorPickerVideo from "../Assets/video/colorPickerVideo.mov";
 
 export type Project = {
     id: string;
@@ -72,7 +75,11 @@ export const projectsData: Project[] = [
     {
         id: "weather-app",
         title: "Weather App",
-        media: [ { type: 'image', url: weatherIcon }],
+        media: [ 
+            { type: 'image', url: weatherIcon },
+            { type: 'video', url: weatherVideo }
+
+        ],
         description: [
             "Full-stack React application showcasing advanced weather visualization.",
             "Created responsive UI with dynamic weather animations and glass-morphic design.",
@@ -86,7 +93,11 @@ export const projectsData: Project[] = [
     {
         id: "crypto-tracker",
         title: "Crypto Tracker",
-        media: [ { type: 'image', url: cryptoTrackerImg }],
+        media: [ 
+            { type: 'image', url: cryptoTrackerImg },
+            { type: 'video', url: coinVideo }
+            
+        ],
         description: [
             "Interactive cryptocurrency tracking application with real-time price monitoring and advanced charting capabilities.",
             "Implemented responsive coin cards with flip animations and dynamic price updates using CoinGecko API.",
@@ -121,7 +132,8 @@ export const projectsData: Project[] = [
         title: "Extension Root Color Picker",
         media: [ 
             { type: 'image', url: rootColorIcon1 },
-            { type: 'image', url: rootColorIcon2 }
+            { type: 'image', url: rootColorIcon2 },
+            { type: 'video', url: colorPickerVideo }
         ],
         description: [
             "Chrome extension built with Plasmo framework for efficient color sampling from any webpage.",
