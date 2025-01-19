@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.014dd62f.css",
-    "main.js": "/Portfolio/static/js/main.8b683080.js",
+    "main.js": "/Portfolio/static/js/main.8dffb92a.js",
     "static/js/453.18fd4992.chunk.js": "/Portfolio/static/js/453.18fd4992.chunk.js",
+    "static/media/weatherVideo.mov": "/Portfolio/static/media/weatherVideo.b3920b961e1a0f085a87.mov",
     "static/media/vacationVideo.mp4": "/Portfolio/static/media/vacationVideo.342ed626e42b1255b083.mp4",
+    "static/media/colorPickerVideo.mov": "/Portfolio/static/media/colorPickerVideo.0da441541359556a4a0b.mov",
     "static/media/hireHeroVideo.mov": "/Portfolio/static/media/hireHeroVideo.05ca3093a6d83976c3f7.mov",
+    "static/media/cryptoTrackerVideo1.mp4": "/Portfolio/static/media/cryptoTrackerVideo1.2e620e968eb02b5b5fe2.mp4",
     "static/media/v1.png": "/Portfolio/static/media/v1.be41bf157f2d33d633ea.png",
     "static/media/v4.png": "/Portfolio/static/media/v4.68e33d30f578e50492bb.png",
     "static/media/v3.png": "/Portfolio/static/media/v3.0879a0542212cc9e53d0.png",
@@ -45,11 +48,11 @@
     "static/media/html-icon.svg": "/Portfolio/static/media/html-icon.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "index.html": "/Portfolio/index.html",
     "main.014dd62f.css.map": "/Portfolio/static/css/main.014dd62f.css.map",
-    "main.8b683080.js.map": "/Portfolio/static/js/main.8b683080.js.map",
+    "main.8dffb92a.js.map": "/Portfolio/static/js/main.8dffb92a.js.map",
     "453.18fd4992.chunk.js.map": "/Portfolio/static/js/453.18fd4992.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.014dd62f.css",
-    "static/js/main.8b683080.js"
+    "static/js/main.8dffb92a.js"
   ]
 }
