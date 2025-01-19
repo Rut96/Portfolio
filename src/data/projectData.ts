@@ -18,7 +18,7 @@ import vacationImg8 from '../Assets/Images/v8.png';
 import vacationImg9 from '../Assets/Images/v9.png';
 import vacationVideo from '../Assets/video/vacationVideo.mp4';
 import weatherVideo from "../Assets/video/weatherVideo.mov";
-import coinVideo from "../Assets/video/coinVideo.mov";
+import cryptoTrackerVideo from "../Assets/video/cryptoTrackerVideo.mp4";
 import colorPickerVideo from "../Assets/video/colorPickerVideo.mov";
 
 export type Project = {
@@ -95,7 +95,7 @@ export const projectsData: Project[] = [
         title: "Crypto Tracker",
         media: [ 
             { type: 'image', url: cryptoTrackerImg },
-            { type: 'video', url: coinVideo }
+            { type: 'video', url: cryptoTrackerVideo }
             
         ],
         description: [
