@@ -3,7 +3,8 @@ import hireHeroImg from '../Assets/Images/hirehero.png';
 import hireHeroVid from '../Assets/video/hireHeroVideo.mov';
 import weatherIcon from '../Assets/Images/project1.png';
 import rootColorIcon1 from '../Assets/Images/rootColorIcon1.png';
-import rootColorIcon2 from '../Assets/Images/rootColorIcon2.png';
+import rootColorIcon3 from '../Assets/Images/rootColorIcon3.png';
+import rootColorIcon4 from '../Assets/Images/rootColorIcon4.png';
 import simonGameImg from '../Assets/Images/simonGameImg.png';
 import simonGameImg2 from '../Assets/Images/simonGameImg2.png';
 import vacationImg1 from '../Assets/Images/v1.png';
@@ -64,6 +65,7 @@ export const projectsData: Project[] = [
             "React",
             "TypeScript",
             "Node.js",
+            "RESTful API",
             "Express",
             "MySQL",
             "Redux",
@@ -71,6 +73,27 @@ export const projectsData: Project[] = [
             "Docker"
         ],
         githubLink: "https://github.com/Rut96/Fullstack-Vacations"
+    },
+    {
+        id: "color-root",
+        title: "Extension Root Color Picker",
+        media: [ 
+            { type: 'image', url: rootColorIcon1 },
+            { type: 'image', url: rootColorIcon3 },
+            { type: 'image', url: rootColorIcon4 },
+            { type: 'video', url: colorPickerVideo }
+        ],
+        description: [
+            "Chrome extension built with Plasmo framework for efficient color sampling from any webpage.",
+            "Implemented modern React architecture with TypeScript for robust type safety and component reusability.",
+            "Developed custom color format conversion system supporting HEX, RGB, and HSL with precise calculations.",
+            "Created persistent storage system using Chrome Storage API for saving color history and user preferences.",
+            "Designed intuitive UI with theme switching capability and custom SVG logo integration."
+
+        ],
+        technologies: ["React + TypeScript", "Plasmo Framework", "Chrome Extension API", "Chrome Storage"],
+        githubLink: "https://github.com/Rut96/Color-Extension",
+        siteLink: "https://chromewebstore.google.com/detail/root-the-color/bjhjpcgjjbbfojhhknkhogmddmnhjdon?hl=en-US&utm_source=ext_sidebar"
     },
     {
         id: "weather-app",
@@ -126,25 +149,6 @@ export const projectsData: Project[] = [
         ],
         technologies: ["Angular", "TypeScript", "GPT-4 API Integration", "Responsive Design"],
         siteLink:"https://rut-hire-hero.web.app/home"
-    },
-    {
-        id: "color-root",
-        title: "Extension Root Color Picker",
-        media: [ 
-            { type: 'image', url: rootColorIcon1 },
-            { type: 'image', url: rootColorIcon2 },
-            { type: 'video', url: colorPickerVideo }
-        ],
-        description: [
-            "Chrome extension built with Plasmo framework for efficient color sampling from any webpage.",
-            "Implemented modern React architecture with TypeScript for robust type safety and component reusability.",
-            "Developed custom color format conversion system supporting HEX, RGB, and HSL with precise calculations.",
-            "Created persistent storage system using Chrome Storage API for saving color history and user preferences.",
-            "Designed intuitive UI with theme switching capability and custom SVG logo integration."
-
-        ],
-        technologies: ["React + TypeScript", "Plasmo Framework", "Chrome Extension API", "Chrome Storage"],
-        githubLink: "https://github.com/Rut96/Color-Extension"
     },
     {
         id: "simon-says",
