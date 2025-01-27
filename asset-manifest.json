@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.014dd62f.css",
-    "main.js": "/Portfolio/static/js/main.8dffb92a.js",
+    "main.js": "/Portfolio/static/js/main.656f0f0e.js",
     "static/js/453.18fd4992.chunk.js": "/Portfolio/static/js/453.18fd4992.chunk.js",
     "static/media/weatherVideo.mov": "/Portfolio/static/media/weatherVideo.b3920b961e1a0f085a87.mov",
     "static/media/vacationVideo.mp4": "/Portfolio/static/media/vacationVideo.342ed626e42b1255b083.mp4",
@@ -24,8 +24,9 @@
     "static/media/hirehero.png": "/Portfolio/static/media/hirehero.45182373b69c9ec197b1.png",
     "static/media/Van_Rut_CV.pdf": "/Portfolio/static/media/Van_Rut_CV.316274f5600c659d4ad4.pdf",
     "static/media/simonGameImg.png": "/Portfolio/static/media/simonGameImg.9fe41f8de19d879e7887.png",
+    "static/media/rootColorIcon3.png": "/Portfolio/static/media/rootColorIcon3.322583402e3b06b167de.png",
+    "static/media/rootColorIcon4.png": "/Portfolio/static/media/rootColorIcon4.9341644157f0b183fa55.png",
     "static/media/simonGameImg2.png": "/Portfolio/static/media/simonGameImg2.a7eb05b5a2d84bf32612.png",
-    "static/media/rootColorIcon2.png": "/Portfolio/static/media/rootColorIcon2.be30b84b8da16780d121.png",
     "static/media/Contact.svg": "/Portfolio/static/media/Contact.b704c3c7af170948ed1877441da4f06c.svg",
     "static/media/rootColorIcon1.png": "/Portfolio/static/media/rootColorIcon1.59451b5ac55528208124.png",
     "static/media/nodejs.png": "/Portfolio/static/media/nodejs.007e99f68b718e476aba.png",
@@ -48,11 +49,11 @@
     "static/media/html-icon.svg": "/Portfolio/static/media/html-icon.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
     "index.html": "/Portfolio/index.html",
     "main.014dd62f.css.map": "/Portfolio/static/css/main.014dd62f.css.map",
-    "main.8dffb92a.js.map": "/Portfolio/static/js/main.8dffb92a.js.map",
+    "main.656f0f0e.js.map": "/Portfolio/static/js/main.656f0f0e.js.map",
     "453.18fd4992.chunk.js.map": "/Portfolio/static/js/453.18fd4992.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.014dd62f.css",
-    "static/js/main.8dffb92a.js"
+    "static/js/main.656f0f0e.js"
   ]
 }
